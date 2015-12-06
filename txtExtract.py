@@ -1,3 +1,10 @@
+# created by Danlu Huang, Zhengning Han
+# This python script is used for extracting user input query from a txt file named "query.txt" and extracting relevant data from the database "ARTICLE"
+# The odd number lines in "query.txt" should be keywords of the database/of a bibtex file, e.g. AUTHOR, TITLE, DATE, etc. 
+# The even number lines in "query.txt" should be user-provided information corresponding to the keyword one the line above. 
+# It can consist of multiple words as long as they are on the same line. 
+
+
 import sqlite3 as lite
 import sys
 
