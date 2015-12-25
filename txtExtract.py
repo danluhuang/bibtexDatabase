@@ -37,5 +37,7 @@ with con:
     inputQuery = extractKeywords("query.txt")
     cur.execute(inputQuery)
     rows = cur.fetchall()
-    print str(rows)
+    output = open("result.txt","w")
+    output.write(str(rows))
+    output.close()
 
